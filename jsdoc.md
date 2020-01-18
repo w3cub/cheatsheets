@@ -31,11 +31,12 @@ See: <http://usejsdoc.org/index.html>
 | ---                          | ---                   |
 | `@param {string=} n`         | Optional              |
 | `@param {string} [n]`        | Optional              |
-| `@param {(string\|number)} n`| Multiple types        |
+| `@param {(string|number)} n` | Multiple types        |
 | `@param {*} n`               | Any type              |
 | `@param {...string} n`       | Repeatable arguments  |
 | `@param {string} [n="hi"]`   | Optional with default |
 | `@param {string[]} n`        | Array of strings      |
+| `@return {Promise<string[]>} n` | Promise fulfilled by array of strings |
 
 See: <http://usejsdoc.org/tags-type.html>
 
@@ -64,6 +65,27 @@ const FOO = 1
  * @property {string} title - The title
  * @property {string} artist - The artist
  * @property {number} year - The year
+ */
+```
+
+```js
+/**
+ * Plays a song
+ * @param {Song} song - The {@link Song} to be played
+ */
+
+function play (song) {
+}
+```
+
+See: <http://usejsdoc.org/tags-typedef.html>
+
+### Typedef Shorthand
+
+```js
+/**
+ * A song
+ * @typedef {{title: string, artist: string, year: number}} Song
  */
 ```
 
