@@ -10,6 +10,7 @@ category: CLI
 | Command                    | Description                 |
 | ---                        | ---                         |
 | `brew install git`         | Install a package           |
+| `brew uninstall git`       | Remove/Uninstall a package  |
 | `brew upgrade git`         | Upgrade a package           |
 | ---                        | ---                         |
 | `brew unlink git`          | Unlink                      |
@@ -34,6 +35,7 @@ category: CLI
 | Command         | Description              |
 | ---             | ---                      |
 | `brew update`   | Update brew and cask     |
+| `brew upgrade`  | Upgrade all packages     |
 | `brew list`     | List installed           |
 | `brew outdated` | What's due for upgrades? |
 | `brew doctor`   | Diagnose brew issues     |
