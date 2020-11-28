@@ -23,9 +23,9 @@
   <meta content="{{ meta_description | escape }}" property="og:description">
   <meta content="{{ meta_description | escape }}" property="twitter:description">
 {% endif %}
-
-<link rel="canonical" href="{{ page_url | escape }}">
-<meta name="og:url" content="{{ page_url | escape }}">
+{% capture canonical %}{{ site.url }}{% if site.permalink contains '.html' %}{{ page.url }}{% else %}{{ page.url | remove:'index.html' }}{% endif %}{% endcapture %}
+<link rel="canonical" href="{{ canonical }}">
+<meta name="og:url" content="{{ canonical }}">
 {% if page.url == '/' %}
   <link rel="prefetch" href="{{ site.url | escape }}">
   <link rel="prerender" href="{{ site.url | escape }}">
