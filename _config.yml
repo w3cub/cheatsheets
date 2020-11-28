@@ -1,4 +1,9 @@
 # Jekyll configuration
+# Site info
+url: https://docs.w3cub.com
+baseurl: /cheatsheets
+title: Cheatsheets - W3cubDocs
+
 
 whitelist:
   - jekyll-redirect-from
@@ -54,10 +59,7 @@ defaults:
       excerpt_separator: "<!--more-->"
       prism_languages: []
 
-# Site info
 
-url: https://docs.w3cub.com/cheatsheets
-title: Cheatsheets - W3cubDocs
 
 # GitHub metadata
 # https://help.github.com/articles/repository-metadata-on-github-pages/

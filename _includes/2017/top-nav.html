@@ -6,9 +6,14 @@ Params:
 {% endcomment %}
 <nav class='top-nav' data-js-no-preview role='navigation'>
   <div class='container'>
+
+    {% capture backurl %}
+      {% if page.url == "/" %} {{site.url}}{% elsif page.url %}{{base}}{% else %}{{site.url}}{% endif %}
+    {% endcapture %}
+
     {% unless include.page.noback %}
       <div class='left'>
-        <a class='home back-button' href='{{base}}'></a>
+        <a class='home back-button' href='{{backurl}}'></a>
       </div>
     {% endunless %}
 

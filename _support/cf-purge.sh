@@ -11,13 +11,13 @@
     | uniq \
     | sed 's/\.md$//g'
 ) \
-  | sed 's#^#https://devhints.io/#g' \
-  | xargs echo https://devhints.io/ \
+  | sed 's#^#https://docs.w3cub.com/cheatsheets/#g' \
+  | xargs echo https://docs.w3cub.com/cheatsheets/ \
   | pbcopy
 
 echo "Copied to clipboard."
 echo "Purge it here:"
 echo ""
-echo "    https://www.cloudflare.com/a/caching/devhints.io"
+echo "    https://www.cloudflare.com/a/caching/docs.w3cub.com/cheatsheets"
 echo ""
 echo "Then click 'Purge Individual Files'"

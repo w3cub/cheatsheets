@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 (
-  echo https://devhints.io/
+  echo https://docs.w3cub.com/cheatsheets/
   (
     git ls-files \
       | grep -E '\.md$' \
@@ -11,6 +11,6 @@
       | uniq \
       | sed 's/\.md$//g'
   ) \
-    | sed 's#^#https://devhints.io/#g'
+    | sed 's#^#https://docs.w3cub.com/cheatsheets/#g'
 ) \
   | xargs curl >/dev/null

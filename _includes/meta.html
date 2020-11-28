@@ -2,7 +2,8 @@
 <meta charset='utf-8'>
 <meta content='width=device-width, initial-scale=1.0' name='viewport'>
 <link href='{{ base }}/assets/favicon.png' rel='shortcut icon'>
-<meta content='{{ page.url | escape }}' name='app:pageurl'>
+{% capture canonical %}{{ site.url }}{{site.baseurl}}{% if site.permalink contains '.html' %}{{ page.url }}{% else %}{{ page.url | remove:'index.html' }}{% endif %}{% endcapture %}
+<meta content='{{ canonical }}' name='app:pageurl'>
 
 {% if meta_title %}
   <title>{{ meta_title | escape }}</title>
@@ -23,7 +24,7 @@
   <meta content="{{ meta_description | escape }}" property="og:description">
   <meta content="{{ meta_description | escape }}" property="twitter:description">
 {% endif %}
-{% capture canonical %}{{ site.url }}{% if site.permalink contains '.html' %}{{ page.url }}{% else %}{{ page.url | remove:'index.html' }}{% endif %}{% endcapture %}
+
 <link rel="canonical" href="{{ canonical }}">
 <meta name="og:url" content="{{ canonical }}">
 {% if page.url == '/' %}
