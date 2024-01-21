@@ -81,7 +81,7 @@ end
 ```ruby
 ruby_block "name" do
   block { File.read ... }
-  not_if { File.exists?(...) }
+  not_if { File.exist?(...) }
 end
 ```
 
