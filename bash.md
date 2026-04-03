@@ -756,7 +756,7 @@ printf '%i+%i=%i\n' 1 2 3  4 5 9
 #### Example
 
 ```bash
-echo "Welcome To Devhints" | tr '[:lower:]' '[:upper:]'
+echo "Welcome To W3cubDocs" | tr '[:lower:]' '[:upper:]'
 WELCOME TO DEVHINTS
 ```
 

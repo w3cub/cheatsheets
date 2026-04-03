@@ -1,8 +1,8 @@
 const isProd = Boolean(import.meta.env.PROD)
 
 export const site = {
-  url: 'https://devhints.io',
-  title: 'Devhints.io cheatsheets'
+  url: 'https://docs.w3cub.com/cheatsheets',
+  title: 'W3cubDocs cheatsheets'
 } as const
 
 export const etc = {
@@ -11,16 +11,16 @@ export const etc = {
 
 export const disqus = {
   enabled: true,
-  host: 'devhints.disqus.com'
+  host: 'docs.w3cub.com'
 } as const
 
 export const googleAnalytics = {
   enabled: isProd,
-  measurementId: 'G-N7TC6B227L'
+  measurementId: 'G-Y3Q5P5PWHV'
 } as const
 
 export const github = {
-  repositoryUrl: 'https://github.com/rstacruz/cheatsheets',
+  repositoryUrl: 'https://github.com/w3cub/cheatsheets',
   branch: 'master'
 } as const
 

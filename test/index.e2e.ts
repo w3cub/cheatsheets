@@ -4,7 +4,7 @@ import { expectMeta, getLdJsonPayloads } from './e2eUtils'
 
 test('homepage', async ({ page }) => {
   await page.goto('/')
-  await expect(page).toHaveTitle('Devhints — TL;DR for developer documentation')
+  await expect(page).toHaveTitle('W3cubDocs — TL;DR for developer documentation')
   const linksToAssert = [
     { name: 'Xpath', href: '/xpath' },
     { name: 'React', href: '/react' },

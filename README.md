@@ -1,4 +1,4 @@
-<h1 align='center'>Devhints</h1>
+<h1 align='center'>W3cubDocs</h1>
 
 <blockquote align='center'>
 TL;DR for developer documentation - a ridiculous collection of cheatsheets
