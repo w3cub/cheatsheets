@@ -51,11 +51,31 @@ category: Vim
 | √         | ×          | ÷           |
 | RT *root* | /\ *times* | -: *divide* |
 
-| ⊂           | ⊃             | ∩                 | ∪          |
-| (C *subset* | )C *superset* | (U *intersection* | )U *union* |
 
 | ¼  | ½  | ¾  | ₃  | ₂  | ³  | ²  |
 | 14 | 12 | 34 | 3s | 2s | 3S | 2S |
+
+### Set Theory
+
+| ∀         | ∃          | ∈              | ∅             | ⊆                    | ⊇                     |
+| FA *forall* | TE *exists* | (- *element of* | /0 *empty set* | (_ *subset or equal* | )_ *superset or equal* |
+
+| ∩                 | ∪          | ⊂           | ⊃             |
+| (U *intersection* | )U *union* | (C *subset* | )C *superset* |
+
+### Greek
+
+| Α  | α  | Β  | β  | Γ  | γ  | Δ  | δ  | Ε  | ε  | Ζ  | ζ  |
+| A* | a* | B* | b* | G* | g* | D* | d* | E* | e* | Z* | z* |
+
+| Η  | η  | Θ  | θ  | Ι  | ι  | Κ  | κ  | Λ  | λ  | Μ  | μ  |
+| Y* | y* | H* | h* | I* | i* | K* | k* | L* | l* | M* | m* |
+
+| Ν  | ν  | Ξ  | ξ  | Ο  | ο  | Π  | π  | Ρ  | ρ  | Σ  | σ  | ς  |
+| N* | n* | C* | c* | O* | o* | P* | p* | R* | r* | S* | s* | *s |
+
+| Τ  | τ  | Υ  | υ  | Φ  | φ  | Χ  | χ  | Ψ  | ψ  | Ω  | ω  |
+| T* | t* | U* | u* | F* | f* | X* | x* | Q* | q* | W* | w* |
 
 ### Triangles
 
