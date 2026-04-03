@@ -1,17 +1,7 @@
-<<<<<<< HEAD
-_output
-_site
-.jekyll-metadata
-/node_modules
-/vendor
-.idea/
-.cache
-=======
 # build output
 dist/
 # generated types
 .astro/
->>>>>>> origin/master
 
 # dependencies
 node_modules/
