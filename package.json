@@ -6,6 +6,7 @@
   "scripts": {
     "astro": "astro",
     "build": "concurrently -m 1 \"npm:cache_markdown\" \"astro build --silent\"",
+    "copy": "npm run build && rm -rf ../website/_deploy/cheatsheets && cp -r dist ../website/_deploy/cheatsheets",
     "cache_markdown": "bundle exec ruby src/ruby/cache_kramdown.rb *.md */*.md",
     "ci": "concurrently -g \"npm:*:check\" \"vitest run\" \"npm:test:*\" \"npm:build\"",
     "dev": "astro dev",
