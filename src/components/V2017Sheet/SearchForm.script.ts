@@ -19,7 +19,7 @@ export async function setup(input: HTMLInputElement) {
     onSelect: (item) => {
       // ^ { label, value }
       const slug = item.value
-      window.location.href = `/${slug}`
+      window.location.href = `/cheatsheets/${slug}`
     }
   })
 }
