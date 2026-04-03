@@ -8,7 +8,8 @@ import tailwind from '@astrojs/tailwind'
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://docs.w3cub.com/cheatsheets',
+  site: 'https://docs.w3cub.com/cheatsheets/',
+  base: '/cheatsheets/',
   build: {
     format: 'file' /* generate /my-post.html instead of /my-post/index.html */,
     inlineStylesheets: 'always'

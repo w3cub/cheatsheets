@@ -36,7 +36,7 @@ export function buildFuseIndex(pages: Record<string, PartialSheetPage>) {
 }
 
 export async function fetchFuse() {
-  const res = await fetch('/searchindex.json')
+  const res = await fetch('/cheatsheets/searchindex.json')
   if (res.status > 400) throw new Error('Failed to fetch searchindex.json')
   return res.json()
 }
